@@ -6,6 +6,17 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
 
+/**
+ * Vercel sets this on every build and runtime.
+ *
+ * Two settings below exist for the local machine and the VPS, and both
+ * break a Vercel deploy: its Next.js builder looks for `.next` and packages
+ * the app itself. The build succeeds and then fails at the output step with
+ * "The Next.js output directory .next was not found". Rather than drop the
+ * local ergonomics, each setting keeps its behaviour everywhere except here.
+ */
+const onVercel = Boolean(process.env.VERCEL);
+
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@nutricycle/shared'],
@@ -20,7 +31,10 @@ const nextConfig = {
   // The symptom is a runtime "__webpack_modules__[moduleId] is not a
   // function" or a blank, non-interactive page, because main-app.js and
   // app/page.js start 404ing. Separate directories make that impossible.
-  distDir: isProd ? '.next-build' : '.next',
+  //
+  // Vercel is the exception: nothing else runs beside the build there, and
+  // its builder reads `.next` by name.
+  distDir: isProd && !onVercel ? '.next-build' : '.next',
 
   // Standalone output bundles a minimal server with only the traced
   // dependencies, so the VPS never needs node_modules or a build step.
@@ -29,7 +43,10 @@ const nextConfig = {
   // Traced from the workspace root so the monorepo's hoisted node_modules
   // are included. Must be a real filesystem path — a URL pathname yields
   // "/C:/..." on Windows, which silently produces no standalone output.
-  output: 'standalone',
+  //
+  // Not on Vercel: it builds its own serverless bundles from the trace, and
+  // a standalone server on top of that is dead weight at best.
+  output: onVercel ? undefined : 'standalone',
   outputFileTracingRoot: path.join(here, '..', '..'),
 
   /**
@@ -66,7 +83,10 @@ const nextConfig = {
     // rename its pack files (EBUSY — an antivirus or sync client holds the
     // handle), and a failed write leaves the client chunks truncated.
     // An in-memory cache avoids the disk churn entirely, in dev and build.
-    config.cache = { type: 'memory' };
+    //
+    // Vercel's filesystem has no such problem, and forcing memory there
+    // would throw away the build cache between deploys.
+    if (!onVercel) config.cache = { type: 'memory' };
     return config;
   },
 };
