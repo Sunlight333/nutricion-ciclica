@@ -127,7 +127,7 @@ export default async function FaqPage({
               </span>
               <h2 className="mt-6 text-h3 text-ink">{t.faq.stillStuckTitle}</h2>
               <p className="mt-3 text-body text-muted">
-                Escribinos y te respondemos por correo.
+                {t.faq.stillStuckBody}
               </p>
               <a
                 href={`mailto:${SITE.email}`}
