@@ -32,15 +32,15 @@ const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     items: [
       {
         q: '¿Nutricycle es gratis?',
-        a: 'Sí. El seguimiento del ciclo, las recetas por fase, el registro diario, el plan semanal, la lista de compras y los artículos están incluidos sin pagar nada. El Plan Hormonal es opcional y desbloquea la asesora con IA sin límite, el predictor de ciclo y las recetas guardadas ilimitadas.',
+        a: 'Nutricycle tiene un plan gratuito que incluye el seguimiento de tu ciclo menstrual, el registro diario de síntomas y energía, y acceso limitado a la Asesora con IA. El Plan Hormonal desbloquea las recetas por fase, el plan semanal de comidas, la lista de compras, la guía de alimentos clave, el predictor de ciclo con IA y la Asesora sin límite de mensajes.',
       },
       {
         q: '¿Qué es la nutrición cíclica?',
-        a: 'Es adaptar lo que comés a la fase del ciclo menstrual en la que estás. Tus niveles de estrógeno y progesterona cambian a lo largo del mes, y con ellos cambian tu energía, tu digestión y lo que tu cuerpo aprovecha mejor. En vez de comer igual las cuatro semanas, ajustás los alimentos a lo que tu cuerpo está haciendo esa semana.',
+        a: 'Es adaptar lo que comés a la fase del ciclo menstrual en la que estás. Tus niveles de estrógeno y progesterona cambian a lo largo del mes, y con ellos cambia tu energía, tu digestión y lo que tu cuerpo necesita para producir, metabolizar y eliminar esas hormonas de forma eficiente. En vez de comer igual las cuatro semanas, ajustás los alimentos a lo que tu cuerpo está haciendo en ese momento.',
       },
       {
         q: '¿Necesito saber cuánto dura mi ciclo?',
-        a: 'No con exactitud. Al configurar la app ingresás la fecha de tu último período y una duración aproximada; si no la sabés, podés empezar con el promedio de 28 días. A medida que registrás tus ciclos, la predicción se ajusta a los tuyos.',
+        a: 'No con exactitud. Al configurar la app ingresás la fecha de tu último período y una duración aproximada; si no la sabés, podés empezar con el promedio de 28 días. A medida que registrás tus ciclos, Nutricycle aprende tu patrón y las predicciones se ajustan a los tuyos.',
       },
       {
         q: '¿Está en español?',
@@ -48,7 +48,7 @@ const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Funciona si mi ciclo es irregular?',
-        a: 'Sí, y es uno de los casos para los que fue pensada. Con ciclos irregulares la predicción es menos precisa al principio, pero el registro diario y las recomendaciones por fase siguen funcionando. Cuantos más ciclos registrás, mejor se ajusta. Si tus ciclos son muy irregulares o ausentes, consultá también con un profesional de salud.',
+        a: 'Sí, y es uno de los casos para los que fue pensada. Con ciclos irregulares la predicción es menos precisa al principio, pero el registro diario de síntomas y las guías de alimentación por fase siguen funcionando desde el primer día. Cuantos más ciclos registrás, mejor aprende tu patrón. Si tus ciclos son muy irregulares o ausentes, te recomendamos acompañar el uso de la app con un profesional de salud.',
       },
     ],
   },
@@ -60,15 +60,15 @@ const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     items: [
       {
         q: '¿Quién puede ver mis datos de salud?',
-        a: 'Nadie más que vos. Los datos del ciclo y los síntomas se usan exclusivamente para generar tus recomendaciones dentro de la app. No se venden, no se comparten con terceros y no se usan con fines publicitarios.',
+        a: 'Nadie más que tú. Los datos del ciclo y los síntomas se usan exclusivamente para generar tus recomendaciones dentro de la app. No se venden, no se comparten con terceros y no se usan con fines publicitarios.',
       },
       {
         q: '¿Mis datos están seguros?',
-        a: 'Se aplican medidas de seguridad estándar de la industria, incluida la encriptación de datos en tránsito y en reposo. Ningún método de transmisión por internet es 100% seguro, y así lo indicamos en la Política de Privacidad.',
+        a: 'Sí. Tu información se protege con encriptación en tránsito y en reposo. Como ocurre con cualquier servicio digital, ningún sistema es 100% infalible — y lo explicamos con más detalle en nuestra Política de Privacidad.',
       },
       {
         q: '¿Puedo borrar mi cuenta y mis datos?',
-        a: 'Sí, en cualquier momento. Escribinos a hola@aliciabasurto.com y eliminamos tu cuenta junto con los datos asociados. También tenés derecho a acceder a tus datos, corregirlos y retirar tu consentimiento.',
+        a: 'Sí, en cualquier momento. Escribinos a hola@aliciabasurto.com y eliminamos tu cuenta junto con todos los datos asociados. También podés solicitar acceder a tu información, corregirla o retirar tu consentimiento cuando quieras.',
       },
     ],
   },
@@ -80,7 +80,7 @@ const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     items: [
       {
         q: '¿Cómo cancelo el Plan Hormonal?',
-        a: 'Desde los ajustes de tu cuenta en App Store o Google Play, según el dispositivo donde te suscribiste. La cancelación se hace efectiva al final del período que ya pagaste, y seguís teniendo acceso hasta entonces.',
+        a: 'Desde los ajustes de tu cuenta en App Store o Google Play, según desde dónde te suscribiste. La cancelación se hace efectiva al final del período que ya pagaste — seguís teniendo acceso completo hasta entonces.',
       },
       {
         q: '¿Puedo restaurar una compra anterior?',
@@ -108,7 +108,7 @@ const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Funciona sin conexión?',
-        a: 'Algunas funciones necesitan conexión —la asesora con IA y la sincronización de tu historial, entre ellas—. Si querés confirmar el comportamiento exacto sin datos, escribinos y te lo respondemos.',
+        a: 'Algunas funciones requieren conexión — la Asesora con IA y la sincronización de tu historial, entre ellas. Si querés saber qué funciona exactamente sin internet en tu caso, escribinos y te lo respondemos.',
       },
       {
         q: '¿Cómo contacto con soporte?',
@@ -140,15 +140,15 @@ const FAQ_TEXT_EN: readonly FaqTextEn[] = [
     items: [
       {
         q: 'Is Nutricycle free?',
-        a: 'Yes. Cycle tracking, recipes by phase, the daily log, the weekly plan, the shopping list and the articles are all included at no cost. The Hormonal Plan is optional and unlocks the AI coach without limits, the cycle predictor and unlimited saved recipes.',
+        a: 'Nutricycle has a free plan that includes tracking your menstrual cycle, the daily log of symptoms and energy, and limited access to the AI Coach. The Hormonal Plan unlocks recipes by phase, the weekly meal plan, the shopping list, the key foods guide, the AI cycle predictor and unlimited messages with the Coach.',
       },
       {
         q: 'What is cyclical nutrition?',
-        a: 'It means adapting what you eat to the phase of your menstrual cycle you are in. Your oestrogen and progesterone levels change across the month, and with them your energy, your digestion and what your body makes best use of. Instead of eating the same way for four weeks, you match your food to what your body is doing that week.',
+        a: 'It means adapting what you eat to the phase of your menstrual cycle you are in. Your oestrogen and progesterone levels change across the month, and with them your energy, your digestion and what your body needs to produce, metabolize and clear out those hormones efficiently. Instead of eating the same way for four weeks, you match your food to what your body is doing at that moment.',
       },
       {
         q: 'Do I need to know how long my cycle is?',
-        a: 'Not exactly. When you set the app up you enter the date of your last period and a rough length; if you do not know it, you can start with the 28-day average. As you log your cycles, the prediction adjusts to yours.',
+        a: 'Not exactly. When you set the app up you enter the date of your last period and a rough length; if you do not know it, you can start with the 28-day average. As you log your cycles, Nutricycle learns your pattern and the predictions adjust to yours.',
       },
       {
         q: 'Is it available in Spanish?',
@@ -156,7 +156,7 @@ const FAQ_TEXT_EN: readonly FaqTextEn[] = [
       },
       {
         q: 'Does it work if my cycle is irregular?',
-        a: 'Yes, and it is one of the cases it was designed for. With irregular cycles the prediction is less precise at first, but the daily log and the recommendations by phase still work. The more cycles you log, the better it adjusts. If your cycles are very irregular or absent, do also speak to a health professional.',
+        a: 'Yes, and it is one of the cases it was designed for. With irregular cycles the prediction is less precise at first, but the daily symptom log and the food guides by phase still work from day one. The more cycles you log, the better it learns your pattern. If your cycles are very irregular or absent, we recommend pairing the app with a health professional.',
       },
     ],
   },
@@ -169,11 +169,11 @@ const FAQ_TEXT_EN: readonly FaqTextEn[] = [
       },
       {
         q: 'Is my data secure?',
-        a: 'Industry-standard security measures are applied, including encryption of data in transit and at rest. No method of transmission over the internet is 100% secure, and we say so in the Privacy Policy.',
+        a: 'Yes. Your information is protected with encryption in transit and at rest. As with any digital service, no system is 100% foolproof — and we explain that in more detail in our Privacy Policy.',
       },
       {
         q: 'Can I delete my account and my data?',
-        a: 'Yes, at any time. Write to hola@aliciabasurto.com and we will delete your account along with the associated data. You also have the right to access your data, correct it and withdraw your consent.',
+        a: 'Yes, at any time. Write to hola@aliciabasurto.com and we will delete your account along with all the associated data. You can also request access to your information, correct it or withdraw your consent whenever you like.',
       },
     ],
   },
@@ -182,7 +182,7 @@ const FAQ_TEXT_EN: readonly FaqTextEn[] = [
     items: [
       {
         q: 'How do I cancel the Hormonal Plan?',
-        a: 'From your account settings in the App Store or Google Play, depending on the device you subscribed on. Cancellation takes effect at the end of the period you have already paid for, and you keep access until then.',
+        a: 'From your account settings in the App Store or Google Play, depending on where you subscribed. Cancellation takes effect at the end of the period you have already paid for — you keep full access until then.',
       },
       {
         q: 'Can I restore a previous purchase?',
@@ -207,7 +207,7 @@ const FAQ_TEXT_EN: readonly FaqTextEn[] = [
       },
       {
         q: 'Does it work offline?',
-        a: 'Some features need a connection — the AI coach and syncing your history among them. If you want to confirm exactly how it behaves without data, write to us and we will tell you.',
+        a: 'Some features require a connection — the AI Coach and syncing your history among them. If you want to know exactly what works without internet in your case, write to us and we will tell you.',
       },
       {
         q: 'How do I contact support?',

@@ -62,17 +62,13 @@ const ES = {
 
   comparison: [
     { feature: 'Seguimiento del ciclo y calendario', free: true, premium: true },
-    { feature: 'Recetas por fase', free: true, premium: true },
     { feature: 'Registro diario (síntomas, ánimo, energía)', free: true, premium: true },
-    { feature: 'Plan semanal de comidas', free: true, premium: true },
-    { feature: 'Lista de compras', free: true, premium: true },
-    { feature: 'Guía de alimentos clave', free: true, premium: true },
-    { feature: 'Artículos y videos', free: true, premium: true },
-    { feature: 'Registro de hidratación', free: true, premium: true },
-    { feature: 'Actividades de bienestar', free: true, premium: true },
+    { feature: 'Recetas por fase', free: '—', premium: true },
+    { feature: 'Plan semanal de comidas', free: '—', premium: true },
+    { feature: 'Lista de compras', free: '—', premium: true },
+    { feature: 'Guía de alimentos clave', free: '—', premium: true },
     { feature: 'Asesora Nutricycle AI', free: 'Limitada', premium: 'Sin límite' },
     { feature: 'Predictor de ciclo con IA', free: '—', premium: 'Incluido' },
-    { feature: 'Recetas guardadas', free: 'Limitadas', premium: 'Sin límite' },
     { feature: 'Soporte prioritario', free: '—', premium: 'Incluido' },
   ] as ComparisonRow[],
 
@@ -121,17 +117,13 @@ const EN = {
 
   comparison: [
     { feature: 'Cycle tracking and calendar', free: true, premium: true },
-    { feature: 'Recipes by phase', free: true, premium: true },
     { feature: 'Daily log (symptoms, mood, energy)', free: true, premium: true },
-    { feature: 'Weekly meal plan', free: true, premium: true },
-    { feature: 'Shopping list', free: true, premium: true },
-    { feature: 'Key foods guide', free: true, premium: true },
-    { feature: 'Articles and videos', free: true, premium: true },
-    { feature: 'Hydration log', free: true, premium: true },
-    { feature: 'Wellness activities', free: true, premium: true },
+    { feature: 'Recipes by phase', free: '—', premium: true },
+    { feature: 'Weekly meal plan', free: '—', premium: true },
+    { feature: 'Shopping list', free: '—', premium: true },
+    { feature: 'Key foods guide', free: '—', premium: true },
     { feature: 'Nutricycle AI coach', free: 'Limited', premium: 'Unlimited' },
     { feature: 'AI cycle predictor', free: '—', premium: 'Included' },
-    { feature: 'Saved recipes', free: 'Limited', premium: 'Unlimited' },
     { feature: 'Priority support', free: '—', premium: 'Included' },
   ] as ComparisonRow[],
 

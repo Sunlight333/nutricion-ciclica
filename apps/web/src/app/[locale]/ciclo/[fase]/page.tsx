@@ -113,10 +113,10 @@ export default async function FasePage({
               <h2 className="mt-6 text-h2 text-ink">{t.cycle.feelsTitle}</h2>
               <ul className="mt-5 flex flex-col gap-3.5">
                 {detail.feels.map((f) => (
-                  <li key={f} className="flex gap-3.5 text-body text-muted">
+                  <li key={f} className="relative text-body text-muted">
                     <span
                       aria-hidden
-                      className={`mt-2.5 h-2 w-2 shrink-0 rounded-full ${s.ink.replace('text-', 'bg-')}`}
+                      className={`absolute -left-5 top-2.5 h-2 w-2 rounded-full ${s.ink.replace('text-', 'bg-')}`}
                     />
                     {f}
                   </li>

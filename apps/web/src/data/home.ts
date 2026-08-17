@@ -38,9 +38,9 @@ const PROBLEM_TEXT: Localized<Record<ProblemId, { pain: string; answer: string }
         'Recetas, alimentos clave y plan semanal ajustados al punto exacto de tu ciclo.',
     },
     forget: {
-      pain: 'Se me olvida registrar mis síntomas.',
+      pain: 'Me agarra de sorpresa cada mes.',
       answer:
-        'Recordatorios inteligentes y un registro diario que se completa en menos de un minuto.',
+        'Recordatorios que te preparan para cada fase antes de que empiece, no cuando ya la estás sintiendo.',
     },
   },
   en: {
@@ -55,9 +55,9 @@ const PROBLEM_TEXT: Localized<Record<ProblemId, { pain: string; answer: string }
         'Recipes, key foods and a weekly plan tuned to exactly where you are in your cycle.',
     },
     forget: {
-      pain: 'I keep forgetting to log my symptoms.',
+      pain: 'It catches me by surprise every month.',
       answer:
-        'Smart reminders and a daily log that takes less than a minute to fill in.',
+        'Reminders that get you ready for each phase before it starts, not once you are already feeling it.',
     },
   },
 };
@@ -95,7 +95,7 @@ const STEP_TEXT: Localized<Record<StepId, { title: string; body: string }>> = {
     },
     balance: {
       title: 'Recupera tu equilibrio',
-      body: 'Con el tiempo tus síntomas se alivian — acné, fatiga, ciclos irregulares — usando la comida como medicina.',
+      body: 'Ciclo a ciclo, tus síntomas se alivian — acné, fatiga, ciclos irregulares — usando la comida como medicina.',
     },
   },
   en: {
@@ -109,7 +109,7 @@ const STEP_TEXT: Localized<Record<StepId, { title: string; body: string }>> = {
     },
     balance: {
       title: 'Find your balance again',
-      body: 'Over time your symptoms ease — acne, fatigue, irregular cycles — using food as medicine.',
+      body: 'Cycle after cycle, your symptoms ease — acne, fatigue, irregular cycles — using food as medicine.',
     },
   },
 };

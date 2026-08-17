@@ -156,50 +156,21 @@ const FEATURE_GROUPS_ES: readonly FeatureGroup[] = [
     features: [
       {
         icon: 'NotebookPen',
-        title: 'Registro diario',
-        body: 'Síntomas, ánimo en 4 niveles, energía en 3 y notas propias. Revisa tu historial cuando quieras.',
+        title: 'Notas personales',
+        body: '¿Cómo te sientes hoy? Un espacio libre para registrar lo que no cabe en una casilla.',
         tint: 'bg-menstrual-soft text-menstrual-ink',
       },
       {
         icon: 'Droplets',
-        title: 'Hidratación',
-        body: 'Registra tu consumo de agua con atajos rápidos: vaso, botella o termo.',
+        title: 'Síntomas del ciclo',
+        body: 'Identifica tus señales corporales — fatiga, cólicos, dolor de cabeza, acné — y empieza a ver los patrones que se repiten mes a mes.',
         tint: 'bg-follicular-soft text-follicular-ink',
       },
       {
         icon: 'Flower2',
-        title: 'Bienestar guiado',
-        body: 'Rutinas de yoga, meditación y respiración con temporizador integrado, adaptadas a cada fase.',
+        title: 'Nivel de energía',
+        body: 'Registra cómo estás en cuatro niveles cada día y descubre cómo tu energía cambia según la fase en la que estás.',
         tint: 'bg-luteal-soft text-luteal-ink',
-      },
-    ],
-  },
-  {
-    id: 'aprende',
-    eyebrow: 'Contenido y aprendizaje',
-    title: 'Entiende',
-    accent: 'lo que te está pasando',
-    lead: 'Educación hormonal en un lenguaje que se entiende, dentro de la misma app.',
-    surface: 'raised',
-    columns: 3,
-    features: [
-      {
-        icon: 'BookOpen',
-        title: 'Biblioteca de artículos',
-        body: 'Artículos con base científica sobre salud hormonal y nutrición cíclica, traducidos a tu idioma.',
-        tint: 'bg-follicular-soft text-follicular-ink',
-      },
-      {
-        icon: 'PlayCircle',
-        title: 'Videoteca',
-        body: 'Videos de bienestar por fase, con búsqueda y filtros para encontrar lo que necesitas hoy.',
-        tint: 'bg-ovulation-soft text-ovulation-ink',
-      },
-      {
-        icon: 'Bell',
-        title: 'Notificaciones inteligentes',
-        body: 'Avisos cuando cambias de fase, recetas recomendadas y recordatorios para registrar tu día.',
-        tint: 'bg-menstrual-soft text-menstrual-ink',
       },
     ],
   },
@@ -323,36 +294,16 @@ const FEATURE_TEXT_EN: readonly FeatureTextEn[] = [
     lead: 'The more you log, the more the app adjusts to you — and the more clearly you see what your body repeats each month.',
     features: [
       {
-        title: 'Daily log',
-        body: 'Symptoms, mood across 4 levels, energy across 3, and your own notes. Look back over your history whenever you like.',
+        title: 'Personal notes',
+        body: 'How are you feeling today? A free space to write down what does not fit in a checkbox.',
       },
       {
-        title: 'Hydration',
-        body: 'Log your water intake with quick shortcuts: glass, bottle or flask.',
+        title: 'Cycle symptoms',
+        body: 'Identify your body’s signals — fatigue, cramps, headaches, acne — and start seeing the patterns that repeat month after month.',
       },
       {
-        title: 'Guided wellbeing',
-        body: 'Yoga, meditation and breathing routines with a built-in timer, adapted to each phase.',
-      },
-    ],
-  },
-  {
-    eyebrow: 'Content and learning',
-    title: 'Understand',
-    accent: 'what is happening to you',
-    lead: 'Hormonal education in language that makes sense, inside the same app.',
-    features: [
-      {
-        title: 'Article library',
-        body: 'Evidence-based articles on hormonal health and cyclical nutrition, translated into your language.',
-      },
-      {
-        title: 'Video library',
-        body: 'Wellbeing videos by phase, with search and filters to find what you need today.',
-      },
-      {
-        title: 'Smart notifications',
-        body: 'Alerts when you move into a new phase, recommended recipes, and reminders to log your day.',
+        title: 'Energy level',
+        body: 'Log how you are doing across four levels each day and discover how your energy shifts with the phase you are in.',
       },
     ],
   },

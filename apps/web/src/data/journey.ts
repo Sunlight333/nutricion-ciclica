@@ -47,14 +47,14 @@ const TEXT: Record<Locale, { title: string; body: string; detail: string }[]> = 
       detail: 'Nutricycle calcula tu fase actual al instante y predice la siguiente.',
     },
     {
-      title: 'Recibí tu plan',
+      title: 'Recibe tu plan',
       body: 'Tu panel muestra tu fase de hoy, tu gráfico hormonal, los alimentos que te convienen y un plan semanal.',
       detail: 'Todo ajustado al punto exacto en el que estás.',
     },
     {
       title: 'Registrá y aprendé',
-      body: 'Anotá tus síntomas y tu energía. Preguntale a la asesora con IA. Probá las recetas de tu fase.',
-      detail: 'Mientras más registrás, más se ajusta la app a vos.',
+      body: 'Anotá tus síntomas y tu energía. Preguntale a la asesora con IA. Prueba las recetas de tu fase.',
+      detail: 'Mientras más registrás, más se ajusta la app a ti.',
     },
     {
       title: 'Mirá tus patrones',

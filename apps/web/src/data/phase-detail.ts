@@ -35,9 +35,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   es: {
   menstrual: {
     summary:
-      'El revestimiento del útero se desprende y las hormonas están en su punto más bajo del mes. Es la fase de menor energía disponible, y eso es fisiología, no falta de voluntad.',
+      'El estrógeno y la progesterona caen al mismo tiempo, lo que explica el cansancio, los cambios de ánimo y la menor tolerancia al ruido y al esfuerzo. No es que estés rindiendo menos — es que tu sistema está haciendo otro trabajo.',
     feels: [
-      'Menos energía y ganas de recogerte',
+      'Menos energía y ganas de hacer menos',
       'Cólicos o pesadez en la parte baja del abdomen',
       'Necesidad de dormir más',
       'Menos tolerancia al esfuerzo intenso',
@@ -53,7 +53,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       },
       {
         label: 'Omega-3',
-        why: 'Antiinflamatorio; acompaña bien el dolor de esta fase.',
+        why: 'Reduce la inflamación y ayuda a calmar el dolor típico de estos días.',
       },
       {
         label: 'Comida caliente y cocida',
@@ -62,11 +62,11 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     ],
     movement:
       'Caminar, estirar, yoga suave. Es la peor semana del mes para exigirte fuerza máxima y la mejor para no hacerlo.',
-    tip: 'Si podés elegir, dejá las reuniones y decisiones exigentes para la semana que viene. Tu claridad vuelve sola.',
+    tip: 'Si puedes elegir, dejá las reuniones y decisiones exigentes para la semana que viene. Tu claridad vuelve sola.',
   },
   folicular: {
     summary:
-      'El estrógeno empieza a subir y con él vuelven la energía, la claridad mental y las ganas de empezar cosas. Es la fase con más capacidad para aprender y entrenar.',
+      'El estrógeno actúa como potenciador natural del ánimo, la memoria y la motivación. También mejora la recuperación muscular, lo que hace de esta fase la más productiva del ciclo, tanto física como mentalmente.',
     feels: [
       'Más energía y mejor ánimo',
       'Más claridad para pensar y decidir',
@@ -88,7 +88,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       },
       {
         label: 'Semillas de linaza',
-        why: 'Parte de la práctica del seed cycling en la primera mitad del ciclo.',
+        why: 'Consumirlas en esta primera mitad del ciclo apoya la producción natural de estrógeno.',
       },
     ],
     movement:
@@ -97,10 +97,10 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   },
   ovulatoria: {
     summary:
-      'El estrógeno llega a su pico y se libera el óvulo. La ovulación dura unas 24 horas, pero la ventana fértil se extiende a unos seis días porque los espermatozoides sobreviven hasta cinco.',
+      'Máxima energía, claridad y apertura social. El cuerpo está en su pico — y en unos días empezará a metabolizar todo lo que produjo.',
     feels: [
       'Pico de energía y de ánimo',
-      'Te sentís más sociable y comunicativa',
+      'Te sientes más sociable y comunicativa',
       'Cambios en el flujo cervical',
       'Algunas mujeres notan una punzada breve en un costado',
     ],
@@ -115,7 +115,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       },
       {
         label: 'Zinc',
-        why: 'Semillas de calabaza y mariscos; asociado al soporte de la ovulación.',
+        why: 'Semillas de calabaza y mariscos, que ayudan a sostener el pico hormonal de esta fase.',
       },
       {
         label: 'Fibra',
@@ -124,11 +124,11 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     ],
     movement:
       'Tu techo de rendimiento del mes. Buen momento para una clase exigente, una carrera o levantar más peso.',
-    tip: 'Es la fase más corta y la más fácil de desaprovechar. Si tenías algo que requiere presencia y energía, ponelo acá.',
+    tip: 'Es la fase más corta y la más fácil de desaprovechar. Si tenías algo que requiere presencia y energía, esta es tu semana.',
   },
   lutea: {
     summary:
-      'La progesterona sube y el cuerpo se prepara para un posible embarazo. El metabolismo basal puede subir hasta 300 calorías diarias, lo que explica buena parte del hambre premenstrual.',
+      'La progesterona actúa como sedante natural, lo que baja la energía y puede afectar el estado de ánimo hacia el final de la fase. Al mismo tiempo, el cuerpo demanda más glucosa y serotonina — de ahí los antojos por dulce y carbohidratos.',
     feels: [
       'Más hambre, sobre todo por carbohidratos',
       'Hinchazón y sensibilidad en el pecho',
@@ -142,11 +142,11 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       },
       {
         label: 'Vitamina B6',
-        why: 'Plátano y garbanzos; participa en la producción de progesterona.',
+        why: 'Plátano y garbanzos, que apoyan la producción de progesterona y la síntesis de serotonina.',
       },
       {
         label: 'Magnesio',
-        why: 'Su déficit se asocia a un SPM más intenso.',
+        why: 'Chocolate amargo, semillas de calabaza y verduras de hoja verde son buenas fuentes para esta fase.',
       },
       {
         label: 'Menos cafeína',
@@ -161,9 +161,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   en: {
     menstrual: {
       summary:
-        'The lining of the uterus sheds and hormones are at their lowest point of the month. This is the phase with the least energy available, and that is physiology, not a lack of willpower.',
+        'Oestrogen and progesterone drop at the same time, which explains the tiredness, the mood swings and the lower tolerance for noise and effort. You are not performing less — your system is doing different work.',
       feels: [
-        'Less energy and a pull towards staying in',
+        'Less energy and less drive to do much',
         'Cramps or heaviness low in the abdomen',
         'A need for more sleep',
         'Less tolerance for hard effort',
@@ -171,7 +171,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       eat: [
         { label: 'Iron', why: 'Between 30 and 80 ml of blood is lost. Lentils, spinach and red meat help replace it.' },
         { label: 'Magnesium', why: 'Associated with milder cramps. Dark chocolate, almonds, avocado.' },
-        { label: 'Omega-3', why: 'Anti-inflammatory; it sits well alongside the pain of this phase.' },
+        { label: 'Omega-3', why: 'Reduces inflammation and helps ease the pain typical of these days.' },
         { label: 'Warm, cooked food', why: 'Easier to digest when your system is asking for rest.' },
       ],
       movement:
@@ -180,7 +180,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     folicular: {
       summary:
-        'Oestrogen starts to rise, and with it come energy, mental clarity and the appetite to start things. This is the phase with the most capacity to learn and to train.',
+        'Oestrogen acts as a natural booster for mood, memory and motivation. It also improves muscle recovery, which makes this the most productive phase of the cycle, both physically and mentally.',
       feels: [
         'More energy and a better mood',
         'More clarity for thinking and deciding',
@@ -191,7 +191,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
         { label: 'Fresh, light foods', why: 'They keep pace with rising oestrogen without weighing digestion down.' },
         { label: 'Fermented foods', why: 'Yoghurt, kimchi and sauerkraut support oestrogen metabolism through the microbiome.' },
         { label: 'Cruciferous vegetables', why: 'Broccoli, cauliflower and cabbage support the liver pathway that processes oestrogen.' },
-        { label: 'Flaxseed', why: 'Part of the seed cycling practice in the first half of the cycle.' },
+        { label: 'Flaxseed', why: 'Eating it in this first half of the cycle supports natural oestrogen production.' },
       ],
       movement:
         'The best window for strength, intervals or starting a new routine. Your body will take more now than it will in two weeks.',
@@ -199,7 +199,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     ovulatoria: {
       summary:
-        'Oestrogen reaches its peak and the egg is released. Ovulation lasts around 24 hours, but the fertile window stretches to about six days because sperm survive for up to five.',
+        'Peak energy, clarity and social openness. The body is at its peak — and in a few days it will start metabolizing everything it produced.',
       feels: [
         'A peak in energy and mood',
         'Feeling more sociable and talkative',
@@ -209,16 +209,16 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       eat: [
         { label: 'Antioxidants', why: 'Berries and leafy greens support egg health.' },
         { label: 'Raw vegetables', why: 'They are better tolerated now than at any other point in the cycle.' },
-        { label: 'Zinc', why: 'Pumpkin seeds and shellfish; associated with supporting ovulation.' },
+        { label: 'Zinc', why: 'Pumpkin seeds and shellfish, which help sustain this phase’s hormonal peak.' },
         { label: 'Fibre', why: 'Helps clear excess oestrogen after the peak.' },
       ],
       movement:
         'Your performance ceiling for the month. A good moment for a demanding class, a race or lifting heavier.',
-      tip: 'It is the shortest phase and the easiest to waste. If you had something that needs presence and energy, put it here.',
+      tip: 'It is the shortest phase and the easiest to waste. If you had something that needs presence and energy, this is your week.',
     },
     lutea: {
       summary:
-        'Progesterone rises and the body prepares for a possible pregnancy. Basal metabolism can rise by up to 300 calories a day, which explains a good part of premenstrual hunger.',
+        'Progesterone acts as a natural sedative, which lowers energy and can affect mood towards the end of the phase. At the same time, the body demands more glucose and serotonin — hence the cravings for sweets and carbohydrates.',
       feels: [
         'More hunger, especially for carbohydrates',
         'Bloating and breast tenderness',
@@ -227,8 +227,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       ],
       eat: [
         { label: 'Complex carbohydrates', why: 'Oats, sweet potato and quinoa steady your blood sugar and take the edge off cravings.' },
-        { label: 'Vitamin B6', why: 'Banana and chickpeas; it plays a part in producing progesterone.' },
-        { label: 'Magnesium', why: 'A deficiency is associated with more intense PMS.' },
+        { label: 'Vitamin B6', why: 'Banana and chickpeas, which support progesterone production and serotonin synthesis.' },
+        { label: 'Magnesium', why: 'Dark chocolate, pumpkin seeds and leafy greens are good sources for this phase.' },
         { label: 'Less caffeine', why: 'It can worsen breast tenderness and premenstrual symptoms in this phase.' },
       ],
       movement:

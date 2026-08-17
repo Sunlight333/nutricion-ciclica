@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { isLocale, DEFAULT_LOCALE, getDictionary, localizePath, alternatesFor, type Locale } from '@/lib/i18n';
 import Image from 'next/image';
-import { Leaf, CircleDashed, HeartHandshake, ArrowRight, AlertTriangle } from 'lucide-react';
+import { Leaf, CircleDashed, HeartHandshake, ArrowRight } from 'lucide-react';
 import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionTexture } from '@/components/layout/section-texture';
@@ -130,19 +130,6 @@ export default async function SobrePage({
                 </li>
               ))}
             </ul>
-
-            {/* Visible in dev and to the client; removed once §4 lands. */}
-            <p className="mt-7 flex items-start gap-3.5 rounded-card border border-ovulation bg-ovulation-soft p-6 text-small text-ink">
-              <AlertTriangle
-                aria-hidden
-                strokeWidth={2}
-                className="mt-0.5 h-5 w-5 shrink-0 text-ovulation-ink"
-              />
-              <span>
-                <strong className="font-semibold">{t.about.pendingLabel}</strong>{' '}
-                {t.about.pendingBody}
-              </span>
-            </p>
           </Reveal>
         </Container>
       </Section>
