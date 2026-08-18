@@ -79,7 +79,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Ovulatoria',
       tagline: 'Pico de producción',
       hormone: 'Máxima energía. El estrógeno alcanza su pico.',
-      nutrition: 'Frutas antioxidantes, zinc y vegetales de hoja verde.',
+      nutrition: 'En el pico hormonal, el cuerpo necesita apoyo para liberar y empezar a metabolizar el estrógeno.',
       foods: ['Ensalada antioxidante Crush', 'Pad Thai de Atún', 'Pizza de Pollo'],
     },
     lutea: {
@@ -109,7 +109,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Ovulatory',
       tagline: 'Peak production',
       hormone: 'Peak energy. Oestrogen reaches its highest point.',
-      nutrition: 'Antioxidant fruit, zinc and leafy green vegetables.',
+      nutrition: 'At the hormonal peak, the body needs support to release and start metabolizing oestrogen.',
       foods: ['Antioxidant Crush Salad', 'Tuna Pad Thai', 'Chicken Pizza'],
     },
     lutea: {
