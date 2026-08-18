@@ -128,7 +128,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   },
   lutea: {
     summary:
-      'La progesterona actúa como sedante natural, lo que baja la energía y puede afectar el estado de ánimo hacia el final de la fase. Al mismo tiempo, el cuerpo demanda más glucosa y serotonina — de ahí los antojos por dulce y carbohidratos.',
+      'La fase más larga del ciclo. El cuerpo metaboliza y se prepara para el reinicio — y tiene razones muy concretas para pedirte más calma y más comida.',
     feels: [
       'Más hambre, sobre todo por carbohidratos',
       'Hinchazón y sensibilidad en el pecho',
@@ -218,7 +218,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     lutea: {
       summary:
-        'Progesterone acts as a natural sedative, which lowers energy and can affect mood towards the end of the phase. At the same time, the body demands more glucose and serotonin — hence the cravings for sweets and carbohydrates.',
+        'The longest phase of the cycle. The body metabolizes and gets ready to reset — and it has very concrete reasons for asking you for more calm and more food.',
       feels: [
         'More hunger, especially for carbohydrates',
         'Bloating and breast tenderness',
