@@ -35,7 +35,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   es: {
   menstrual: {
     summary:
-      'El estrógeno y la progesterona caen al mismo tiempo, lo que explica el cansancio, los cambios de ánimo y la menor tolerancia al ruido y al esfuerzo. No es que estés rindiendo menos — es que tu sistema está haciendo otro trabajo.',
+      'El cuerpo en modo renovación. Elimina, descansa y se prepara para empezar de cero — y tiene razones muy concretas para pedirte calma.',
     feels: [
       'Menos energía y ganas de hacer menos',
       'Cólicos o pesadez en la parte baja del abdomen',
@@ -161,7 +161,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   en: {
     menstrual: {
       summary:
-        'Oestrogen and progesterone drop at the same time, which explains the tiredness, the mood swings and the lower tolerance for noise and effort. You are not performing less — your system is doing different work.',
+        'The body in renewal mode. It clears out, rests and gets ready to start from zero — and it has very concrete reasons for asking you to slow down.',
       feels: [
         'Less energy and less drive to do much',
         'Cramps or heaviness low in the abdomen',
