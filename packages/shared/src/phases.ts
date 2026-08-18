@@ -72,7 +72,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Folicular',
       tagline: 'Construir y producir',
       hormone: 'El estrógeno sube. Vuelve la claridad y la fuerza.',
-      nutrition: 'Crucíferas, semillas de linaza y proteínas ligeras.',
+      nutrition: 'El cuerpo empieza a producir estrógeno — estos alimentos apoyan ese proceso desde la base.',
       foods: ['Pasta de Brócoli', 'Pizza de Coliflor', 'Galletas de Tahini'],
     },
     ovulatoria: {
@@ -102,7 +102,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Follicular',
       tagline: 'Build and produce',
       hormone: 'Oestrogen rises. Clarity and strength come back.',
-      nutrition: 'Cruciferous vegetables, flaxseed and light proteins.',
+      nutrition: 'The body starts producing oestrogen — these foods support that process from the ground up.',
       foods: ['Broccoli Pasta', 'Cauliflower Pizza', 'Tahini Cookies'],
     },
     ovulatoria: {
