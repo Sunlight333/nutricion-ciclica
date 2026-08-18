@@ -29,8 +29,12 @@ export interface Phase {
   dayEnd: number;
   /** Short line describing the hormonal state */
   hormone: string;
-  /** What to eat, one sentence */
+  /** What to eat, one sentence — used on the homepage phase cards,
+   *  /como-funciona, and the /recetas/fase hero + meta description. */
   nutrition: string;
+  /** Longer nutrition framing — used only in the "Qué acompaña a tu cuerpo
+   *  ahora" section on /ciclo/[fase]. */
+  nutritionDetail: string;
   /** Sample foods — kept short, these are chips not prose */
   foods: string[];
   /** Tailwind token names from tokens.css */
@@ -56,6 +60,7 @@ interface PhaseText {
   tagline: string;
   hormone: string;
   nutrition: string;
+  nutritionDetail: string;
   foods: string[];
 }
 
@@ -65,21 +70,24 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Menstrual',
       tagline: 'Eliminar y restaurar',
       hormone: 'Hormonas en su punto más bajo. El cuerpo pide calma.',
-      nutrition: 'Estos días el cuerpo elimina y se renueva — los alimentos ayudan a suavizar ese proceso.',
+      nutrition: 'Hierro, omega-3 y alimentos antiinflamatorios para reponer energía.',
+      nutritionDetail: 'Estos días el cuerpo elimina y se renueva — los alimentos ayudan a suavizar ese proceso.',
       foods: ['Crema de zapallo', 'Risotto de Garbanzos', 'Bowl Invierno Hormonal'],
     },
     folicular: {
       name: 'Folicular',
       tagline: 'Construir y producir',
       hormone: 'El estrógeno sube. Vuelve la claridad y la fuerza.',
-      nutrition: 'El cuerpo empieza a producir estrógeno — estos alimentos apoyan ese proceso desde la base.',
+      nutrition: 'Crucíferas, semillas de linaza y proteínas ligeras.',
+      nutritionDetail: 'El cuerpo empieza a producir estrógeno — estos alimentos apoyan ese proceso desde la base.',
       foods: ['Pasta de Brócoli', 'Pizza de Coliflor', 'Galletas de Tahini'],
     },
     ovulatoria: {
       name: 'Ovulatoria',
       tagline: 'Pico de producción',
       hormone: 'Máxima energía. El estrógeno alcanza su pico.',
-      nutrition: 'En el pico hormonal, el cuerpo necesita apoyo para liberar y empezar a metabolizar el estrógeno.',
+      nutrition: 'Frutas antioxidantes, zinc y vegetales de hoja verde.',
+      nutritionDetail: 'En el pico hormonal, el cuerpo necesita apoyo para liberar y empezar a metabolizar el estrógeno.',
       foods: ['Ensalada antioxidante Crush', 'Pad Thai de Atún', 'Pizza de Pollo'],
     },
     lutea: {
@@ -87,6 +95,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       tagline: 'Metabolizar y preparar',
       hormone: 'La progesterona se activa. Aparecen los antojos y el SPM.',
       nutrition: 'Chocolate, frutos secos y carbohidratos complejos.',
+      nutritionDetail: 'El cuerpo metaboliza la progesterona y se prepara para el reinicio — estos alimentos acompañan ese trabajo.',
       foods: ['Brownies Secreto', 'Tortilla de Batata', 'Granola de Tiramisú'],
     },
   },
@@ -95,21 +104,24 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Menstrual',
       tagline: 'Clear out and restore',
       hormone: 'Hormones at their lowest. Your body is asking for calm.',
-      nutrition: 'These days your body is clearing out and renewing — food helps ease that process.',
+      nutrition: 'Iron, omega-3 and anti-inflammatory foods to restore your energy.',
+      nutritionDetail: 'These days your body is clearing out and renewing — food helps ease that process.',
       foods: ['Pumpkin Cream Soup', 'Chickpea Risotto', 'Hormonal Winter Bowl'],
     },
     folicular: {
       name: 'Follicular',
       tagline: 'Build and produce',
       hormone: 'Oestrogen rises. Clarity and strength come back.',
-      nutrition: 'The body starts producing oestrogen — these foods support that process from the ground up.',
+      nutrition: 'Cruciferous vegetables, flaxseed and light proteins.',
+      nutritionDetail: 'The body starts producing oestrogen — these foods support that process from the ground up.',
       foods: ['Broccoli Pasta', 'Cauliflower Pizza', 'Tahini Cookies'],
     },
     ovulatoria: {
       name: 'Ovulatory',
       tagline: 'Peak production',
       hormone: 'Peak energy. Oestrogen reaches its highest point.',
-      nutrition: 'At the hormonal peak, the body needs support to release and start metabolizing oestrogen.',
+      nutrition: 'Antioxidant fruit, zinc and leafy green vegetables.',
+      nutritionDetail: 'At the hormonal peak, the body needs support to release and start metabolizing oestrogen.',
       foods: ['Antioxidant Crush Salad', 'Tuna Pad Thai', 'Chicken Pizza'],
     },
     lutea: {
@@ -117,6 +129,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       tagline: 'Metabolize and prepare',
       hormone: 'Progesterone kicks in. Cravings and PMS show up.',
       nutrition: 'Chocolate, nuts and complex carbohydrates.',
+      nutritionDetail: 'The body metabolizes progesterone and gets ready to reset — these foods support that work.',
       foods: ['Secret Brownies', 'Sweet Potato Omelette', 'Tiramisu Granola'],
     },
   },

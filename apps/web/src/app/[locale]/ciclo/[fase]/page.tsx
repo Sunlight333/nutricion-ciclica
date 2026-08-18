@@ -139,7 +139,7 @@ export default async function FasePage({
               {t.cycle.foodTitle} <span className="text-accent">{t.cycle.foodAccent}</span>
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-body text-muted">
-              {phase.nutrition}
+              {phase.nutritionDetail}
             </p>
           </Reveal>
 
