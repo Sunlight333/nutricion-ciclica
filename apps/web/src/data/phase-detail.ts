@@ -97,7 +97,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   },
   ovulatoria: {
     summary:
-      'Máxima energía, claridad y apertura social. El cuerpo está en su pico — y en unos días empezará a metabolizar todo lo que produjo.',
+      'Con el estrógeno en su punto más alto, también sube la testosterona, lo que potencia la confianza, la libido y la toma de decisiones. Es el momento en que cuerpo y mente funcionan más en sincronía.',
     feels: [
       'Pico de energía y de ánimo',
       'Te sientes más sociable y comunicativa',
@@ -199,7 +199,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     ovulatoria: {
       summary:
-        'Peak energy, clarity and social openness. The body is at its peak — and in a few days it will start metabolizing everything it produced.',
+        'With oestrogen at its highest point, testosterone also rises, boosting confidence, libido and decision-making. This is when body and mind are most in sync.',
       feels: [
         'A peak in energy and mood',
         'Feeling more sociable and talkative',
