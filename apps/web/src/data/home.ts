@@ -172,8 +172,8 @@ const FEATURE_TEXT: Localized<Record<FeatureId, { title: string; body: string }>
       body: 'Construida automáticamente desde tus alimentos de fase y tu plan de la semana.',
     },
     wellness: {
-      title: 'Bienestar guiado',
-      body: 'Rutinas de yoga, meditación y respiración con temporizador, adaptadas a cada fase.',
+      title: 'Alimentos clave por fase',
+      body: 'Proteínas, grasas, granos y carbohidratos organizados según tu fase, para que puedas cocinar a tu manera sin perder el enfoque hormonal.',
     },
   },
   en: {
@@ -198,8 +198,8 @@ const FEATURE_TEXT: Localized<Record<FeatureId, { title: string; body: string }>
       body: 'Put together automatically from your phase foods and the plan for your week.',
     },
     wellness: {
-      title: 'Guided wellbeing',
-      body: 'Yoga, meditation and breathing routines with a timer, adapted to each phase.',
+      title: 'Key foods by phase',
+      body: 'Proteins, fats, grains and carbohydrates organized around your phase, so you can cook your own way without losing the hormonal focus.',
     },
   },
 };

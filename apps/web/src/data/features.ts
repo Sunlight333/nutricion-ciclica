@@ -168,8 +168,8 @@ const FEATURE_GROUPS_ES: readonly FeatureGroup[] = [
       },
       {
         icon: 'Flower2',
-        title: 'Alimentos clave por fase',
-        body: 'Proteínas, grasas, granos y carbohidratos organizados según tu fase, para que puedas cocinar a tu manera sin perder el enfoque hormonal.',
+        title: 'Nivel de energía',
+        body: 'Registra cómo estás en cuatro niveles cada día y descubre cómo tu energía cambia según la fase en la que estás.',
         tint: 'bg-luteal-soft text-luteal-ink',
       },
     ],
@@ -302,8 +302,8 @@ const FEATURE_TEXT_EN: readonly FeatureTextEn[] = [
         body: 'Identify your body’s signals — fatigue, cramps, headaches, acne — and start seeing the patterns that repeat month after month.',
       },
       {
-        title: 'Key foods by phase',
-        body: 'Proteins, fats, grains and carbohydrates organized around your phase, so you can cook your own way without losing the hormonal focus.',
+        title: 'Energy level',
+        body: 'Log how you are doing across four levels each day and discover how your energy shifts with the phase you are in.',
       },
     ],
   },
