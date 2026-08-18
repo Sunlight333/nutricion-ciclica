@@ -66,7 +66,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   },
   folicular: {
     summary:
-      'El estrógeno actúa como potenciador natural del ánimo, la memoria y la motivación. También mejora la recuperación muscular, lo que hace de esta fase la más productiva del ciclo, tanto física como mentalmente.',
+      'La energía vuelve y el cuerpo empieza a construir. Es la fase donde todo se produce — y la alimentación puede potenciar ese proceso desde adentro.',
     feels: [
       'Más energía y mejor ánimo',
       'Más claridad para pensar y decidir',
@@ -97,7 +97,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   },
   ovulatoria: {
     summary:
-      'Máxima energía, claridad y apertura social. El cuerpo está en su pico — y en unos días empezará a metabolizar todo lo que produjo.',
+      'Con el estrógeno en su punto más alto, también sube la testosterona, lo que potencia la confianza, la libido y la toma de decisiones. Es el momento en que cuerpo y mente funcionan más en sincronía.',
     feels: [
       'Pico de energía y de ánimo',
       'Te sientes más sociable y comunicativa',
@@ -180,7 +180,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     folicular: {
       summary:
-        'Oestrogen acts as a natural booster for mood, memory and motivation. It also improves muscle recovery, which makes this the most productive phase of the cycle, both physically and mentally.',
+        'Energy comes back and the body starts to build. This is the phase where everything gets produced — and food can power that process from within.',
       feels: [
         'More energy and a better mood',
         'More clarity for thinking and deciding',
@@ -199,7 +199,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     ovulatoria: {
       summary:
-        'Peak energy, clarity and social openness. The body is at its peak — and in a few days it will start metabolizing everything it produced.',
+        'With oestrogen at its highest point, testosterone also rises, boosting confidence, libido and decision-making. This is when body and mind are most in sync.',
       feels: [
         'A peak in energy and mood',
         'Feeling more sociable and talkative',
