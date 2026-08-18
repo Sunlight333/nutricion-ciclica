@@ -103,7 +103,7 @@ export default async function FasePage({
               </span>
               <h2 className="mt-6 text-h2 text-ink">{t.cycle.insideTitle}</h2>
               <p className="mt-5 text-body text-muted">{phase.hormone}</p>
-              <p className="mt-4 text-body text-muted">{detail.summary}</p>
+              <p className="mt-4 text-body text-muted">{detail.mechanism}</p>
             </Reveal>
 
             <Reveal delay={140}>

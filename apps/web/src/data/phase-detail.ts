@@ -19,8 +19,12 @@ import { type Locale, type Localized, type PhaseSlug, pick } from '@nutricycle/s
  */
 
 export interface PhaseDetail {
-  /** One-line answer to "what is actually happening" */
+  /** Short, card-style line — used on the /ciclo overview card and as the
+   *  /ciclo/[fase] hero lead. */
   summary: string;
+  /** Longer, more clinical explanation — used only for the "Qué pasa por
+   *  dentro" body on the /ciclo/[fase] detail page. */
+  mechanism: string;
   /** How it commonly feels — framed as tendencies, never as diagnosis */
   feels: string[];
   /** What supports the body now */
@@ -36,6 +40,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   menstrual: {
     summary:
       'El cuerpo en modo renovación. Elimina, descansa y se prepara para empezar de cero — y tiene razones muy concretas para pedirte calma.',
+    mechanism:
+      'El estrógeno y la progesterona caen al mismo tiempo, lo que explica el cansancio, los cambios de ánimo y la menor tolerancia al ruido y al esfuerzo. No es que estés rindiendo menos — es que tu sistema está haciendo otro trabajo.',
     feels: [
       'Menos energía y ganas de hacer menos',
       'Cólicos o pesadez en la parte baja del abdomen',
@@ -67,6 +73,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   folicular: {
     summary:
       'La energía vuelve y el cuerpo empieza a construir. Es la fase donde todo se produce — y la alimentación puede potenciar ese proceso desde adentro.',
+    mechanism:
+      'El estrógeno actúa como potenciador natural del ánimo, la memoria y la motivación. También mejora la recuperación muscular, lo que hace de esta fase la más productiva del ciclo, tanto física como mentalmente.',
     feels: [
       'Más energía y mejor ánimo',
       'Más claridad para pensar y decidir',
@@ -98,6 +106,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   ovulatoria: {
     summary:
       'Máxima energía, claridad y apertura social. El cuerpo está en su pico — y en unos días empezará a metabolizar todo lo que produjo.',
+    mechanism:
+      'Con el estrógeno en su punto más alto, también sube la testosterona, lo que potencia la confianza, la libido y la toma de decisiones. Es el momento en que cuerpo y mente funcionan más en sincronía.',
     feels: [
       'Pico de energía y de ánimo',
       'Te sientes más sociable y comunicativa',
@@ -128,6 +138,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
   },
   lutea: {
     summary:
+      'La fase más larga del ciclo. El cuerpo metaboliza y se prepara para el reinicio — y tiene razones muy concretas para pedirte más calma y más comida.',
+    mechanism:
       'La progesterona actúa como sedante natural, lo que baja la energía y puede afectar el estado de ánimo hacia el final de la fase. Al mismo tiempo, el cuerpo demanda más glucosa y serotonina — de ahí los antojos por dulce y carbohidratos.',
     feels: [
       'Más hambre, sobre todo por carbohidratos',
@@ -162,6 +174,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     menstrual: {
       summary:
         'The body in renewal mode. It clears out, rests and gets ready to start from zero — and it has very concrete reasons for asking you to slow down.',
+      mechanism:
+        'Oestrogen and progesterone drop at the same time, which explains the tiredness, the mood swings and the lower tolerance for noise and effort. You are not performing less — your system is doing different work.',
       feels: [
         'Less energy and less drive to do much',
         'Cramps or heaviness low in the abdomen',
@@ -181,6 +195,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     folicular: {
       summary:
         'Energy comes back and the body starts to build. This is the phase where everything gets produced — and food can power that process from within.',
+      mechanism:
+        'Oestrogen acts as a natural booster for mood, memory and motivation. It also improves muscle recovery, which makes this the most productive phase of the cycle, both physically and mentally.',
       feels: [
         'More energy and a better mood',
         'More clarity for thinking and deciding',
@@ -200,6 +216,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     ovulatoria: {
       summary:
         'Peak energy, clarity and social openness. The body is at its peak — and in a few days it will start metabolizing everything it produced.',
+      mechanism:
+        'With oestrogen at its highest point, testosterone also rises, boosting confidence, libido and decision-making. This is when body and mind are most in sync.',
       feels: [
         'A peak in energy and mood',
         'Feeling more sociable and talkative',
@@ -218,6 +236,8 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     },
     lutea: {
       summary:
+        'The longest phase of the cycle. The body metabolizes and gets ready to reset — and it has very concrete reasons for asking you for more calm and more food.',
+      mechanism:
         'Progesterone acts as a natural sedative, which lowers energy and can affect mood towards the end of the phase. At the same time, the body demands more glucose and serotonin — hence the cravings for sweets and carbohydrates.',
       feels: [
         'More hunger, especially for carbohydrates',
