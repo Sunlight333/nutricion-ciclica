@@ -65,7 +65,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Menstrual',
       tagline: 'Eliminar y restaurar',
       hormone: 'Hormonas en su punto más bajo. El cuerpo pide calma.',
-      nutrition: 'Hierro, omega-3 y alimentos antiinflamatorios para reponer energía.',
+      nutrition: 'Estos días el cuerpo elimina y se renueva — los alimentos ayudan a suavizar ese proceso.',
       foods: ['Crema de zapallo', 'Risotto de Garbanzos', 'Bowl Invierno Hormonal'],
     },
     folicular: {
@@ -95,7 +95,7 @@ const PHASE_TEXT: Localized<Record<PhaseSlug, PhaseText>> = {
       name: 'Menstrual',
       tagline: 'Clear out and restore',
       hormone: 'Hormones at their lowest. Your body is asking for calm.',
-      nutrition: 'Iron, omega-3 and anti-inflammatory foods to restore your energy.',
+      nutrition: 'These days your body is clearing out and renewing — food helps ease that process.',
       foods: ['Pumpkin Cream Soup', 'Chickpea Risotto', 'Hormonal Winter Bowl'],
     },
     folicular: {
