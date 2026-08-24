@@ -66,7 +66,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       },
       {
         label: 'Omega-3',
-        why: 'Reduce la inflamación y ayuda a calmar el dolor típico de estos días.',
+        why: 'Salmón, sardinas, nueces y aceite de linaza. Reduce la inflamación y ayuda a calmar el dolor de estos días.',
       },
       {
         label: 'Comida caliente y cocida',
@@ -204,7 +204,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       eat: [
         { label: 'Iron', why: 'Between 30 and 80 ml of blood is lost. Lentils, spinach and red meat help replace it.' },
         { label: 'Magnesium', why: 'Associated with milder cramps. Dark chocolate, almonds, avocado.' },
-        { label: 'Omega-3', why: 'Reduces inflammation and helps ease the pain typical of these days.' },
+        { label: 'Omega-3', why: 'Salmon, sardines, walnuts and flaxseed oil. Reduces inflammation and helps ease the pain of these days.' },
         { label: 'Warm, cooked food', why: 'Easier to digest when your system is asking for rest.' },
       ],
       movement:
