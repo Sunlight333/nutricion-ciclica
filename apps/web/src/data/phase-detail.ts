@@ -154,9 +154,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       'La fase más larga del ciclo. El cuerpo metaboliza y se prepara para el reinicio — y tiene razones muy concretas para pedirte más calma y más comida.',
     mechanism:
       'La progesterona actúa como sedante natural, lo que baja la energía y puede afectar el estado de ánimo hacia el final de la fase. Al mismo tiempo, el cuerpo demanda más glucosa y serotonina — de ahí los antojos por dulce y carbohidratos.',
-    heroAccent: 'Metabolizar y preparar',
+    heroAccent: 'Metaboliza y Prepara',
     heroLead:
-      'La fase más larga del ciclo. El cuerpo metaboliza y se prepara para el reinicio — y tiene razones muy concretas para pedirte más calma y más comida.',
+      'La progesterona sube y el cuerpo se prepara para un posible embarazo. El metabolismo basal puede subir hasta 300 calorías diarias, lo que explica buena parte del hambre premenstrual.',
     feels: [
       'Más hambre, sobre todo por carbohidratos',
       'Hinchazón y sensibilidad en el pecho',
@@ -264,9 +264,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
         'The longest phase of the cycle. The body metabolizes and gets ready to reset — and it has very concrete reasons for asking you for more calm and more food.',
       mechanism:
         'Progesterone acts as a natural sedative, which lowers energy and can affect mood towards the end of the phase. At the same time, the body demands more glucose and serotonin — hence the cravings for sweets and carbohydrates.',
-      heroAccent: 'Metabolize and prepare',
+      heroAccent: 'Metabolize and Prepare',
       heroLead:
-        'The longest phase of the cycle. The body metabolizes and gets ready to reset — and it has very concrete reasons for asking you for more calm and more food.',
+        'Progesterone rises and the body prepares for a possible pregnancy. Basal metabolism can rise by up to 300 calories a day, which explains a good part of premenstrual hunger.',
       feels: [
         'More hunger, especially for carbohydrates',
         'Bloating and breast tenderness',
