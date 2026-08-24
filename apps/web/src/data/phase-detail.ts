@@ -118,9 +118,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       'Máxima energía, claridad y apertura social. El cuerpo está en su pico — y en unos días empezará a metabolizar todo lo que produjo.',
     mechanism:
       'Con el estrógeno en su punto más alto, también sube la testosterona, lo que potencia la confianza, la libido y la toma de decisiones. Es el momento en que cuerpo y mente funcionan más en sincronía.',
-    heroAccent: 'Pico de producción',
+    heroAccent: 'Pico de Vitalidad y Producción',
     heroLead:
-      'Máxima energía, claridad y apertura social. El cuerpo está en su pico — y en unos días empezará a metabolizar todo lo que produjo.',
+      'El estrógeno llega a su pico y se libera el óvulo. La ovulación dura unas 24 horas, pero la ventana fértil se extiende a unos seis días porque los espermatozoides sobreviven hasta cinco.',
     feels: [
       'Pico de energía y de ánimo',
       'Te sientes más sociable y comunicativa',
@@ -240,9 +240,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
         'Peak energy, clarity and social openness. The body is at its peak — and in a few days it will start metabolizing everything it produced.',
       mechanism:
         'With oestrogen at its highest point, testosterone also rises, boosting confidence, libido and decision-making. This is when body and mind are most in sync.',
-      heroAccent: 'Peak production',
+      heroAccent: 'Peak Vitality and Production',
       heroLead:
-        'Peak energy, clarity and social openness. The body is at its peak — and in a few days it will start metabolizing everything it produced.',
+        'Oestrogen reaches its peak and the egg is released. Ovulation lasts around 24 hours, but the fertile window stretches to about six days because sperm survive for up to five.',
       feels: [
         'A peak in energy and mood',
         'Feeling more sociable and talkative',
