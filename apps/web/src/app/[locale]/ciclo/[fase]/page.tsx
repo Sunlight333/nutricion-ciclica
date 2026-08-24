@@ -86,8 +86,8 @@ export default async function FasePage({
       <PageHero
         eyebrow={`${t.cycle.phaseEyebrow} ${phase.name} · ${phaseDays(phase, locale)}`}
         title={phase.name}
-        accent={phase.tagline}
-        lead={detail.summary}
+        accent={detail.heroAccent}
+        lead={detail.heroLead}
         image={hero.image}
         focal="center 50%"
         veil={hero.veil}
