@@ -147,7 +147,7 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
     ],
     movement:
       'Tu techo de rendimiento del mes. Buen momento para una clase exigente, una carrera o levantar más peso.',
-    tip: 'Es la fase más corta y la más fácil de desaprovechar. Si tenías algo que requiere presencia y energía, esta es tu semana.',
+    tip: 'Es la fase más corta y la más fácil de desaprovechar. Si tienes algo que requiere presencia y energía, esta es tu semana.',
   },
   lutea: {
     summary:
