@@ -82,9 +82,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
       'La energía vuelve y el cuerpo empieza a construir. Es la fase donde todo se produce — y la alimentación puede potenciar ese proceso desde adentro.',
     mechanism:
       'El estrógeno actúa como potenciador natural del ánimo, la memoria y la motivación. También mejora la recuperación muscular, lo que hace de esta fase la más productiva del ciclo, tanto física como mentalmente.',
-    heroAccent: 'Construir y producir',
+    heroAccent: 'Construye y Produce',
     heroLead:
-      'La energía vuelve y el cuerpo empieza a construir. Es la fase donde todo se produce — y la alimentación puede potenciar ese proceso desde adentro.',
+      'El estrógeno empieza a subir y con él vuelve la energía, la claridad mental y las ganas de empezar cosas nuevas. Es la fase con más capacidad para aprender y entrenar con intensidad.',
     feels: [
       'Más energía y mejor ánimo',
       'Más claridad para pensar y decidir',
@@ -216,9 +216,9 @@ const PHASE_DETAIL_TEXT: Localized<Record<PhaseSlug, PhaseDetail>> = {
         'Energy comes back and the body starts to build. This is the phase where everything gets produced — and food can power that process from within.',
       mechanism:
         'Oestrogen acts as a natural booster for mood, memory and motivation. It also improves muscle recovery, which makes this the most productive phase of the cycle, both physically and mentally.',
-      heroAccent: 'Build and produce',
+      heroAccent: 'Build and Produce',
       heroLead:
-        'Energy comes back and the body starts to build. This is the phase where everything gets produced — and food can power that process from within.',
+        'Oestrogen starts to rise, and with it come energy, mental clarity and the urge to start new things. This is the phase with the most capacity to learn and train with intensity.',
       feels: [
         'More energy and a better mood',
         'More clarity for thinking and deciding',
