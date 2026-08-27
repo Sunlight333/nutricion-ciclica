@@ -18,12 +18,12 @@ const STYLES: Record<string, { chip: string; ink: string }> = {
   lutea: { chip: 'bg-luteal-soft text-luteal-ink', ink: 'text-luteal-ink' },
 };
 
-/** Real "Tu menú de hoy" screenshot per phase — client-supplied. */
+/** Real "Recetas por fase" screenshot per phase — client-supplied. */
 const SCREENSHOTS: Record<string, string> = {
-  menstrual: '/images/app/today-menstrual.jpg',
-  folicular: '/images/app/today-folicular.jpg',
-  ovulatoria: '/images/app/today-ovulatoria.jpg',
-  lutea: '/images/app/today-lutea.jpg',
+  menstrual: '/images/app/recipes-menstrual.jpg',
+  folicular: '/images/app/recipes-folicular.jpg',
+  ovulatoria: '/images/app/recipes-ovulatoria.jpg',
+  lutea: '/images/app/recipes-lutea.jpg',
 };
 
 /** Same brand hues as tokens.css `--color-{phase}` — the ambient glow
