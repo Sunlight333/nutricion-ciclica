@@ -450,7 +450,7 @@ export const es = {
     },
     membresia: {
       title: 'Membresía y precios — Nutricycle',
-      description: 'Nutricycle es gratis para empezar. El Plan Hormonal desbloquea la asesora con IA sin límite, el predictor de ciclo y recetas guardadas ilimitadas.',
+      description: 'Nutricycle es gratis para empezar. El Plan Hormonal desbloquea la asesora con IA sin límite, el análisis de plato con IA y recetas guardadas ilimitadas.',
     },
     recetas: {
       title: 'Recetas por fase del ciclo',

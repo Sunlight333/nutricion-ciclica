@@ -136,9 +136,9 @@ const FEATURE_GROUPS_ES: readonly FeatureGroup[] = [
         note: 'Con Google Gemini 2.0',
       },
       {
-        icon: 'TrendingUp',
-        title: 'Predictor de ciclo con IA',
-        body: 'Predicciones e insights generados a partir de tu historial de ciclos y los síntomas que has registrado.',
+        icon: 'Camera',
+        title: 'Analiza tu plato con IA',
+        body: 'Sacale una foto a tu comida y la IA identifica los alimentos y calcula proteína, carbohidratos, grasas y calorías al instante.',
         tint: 'bg-ovulation-soft text-ovulation-ink',
         premium: true,
       },
@@ -282,8 +282,8 @@ const FEATURE_TEXT_EN: readonly FeatureTextEn[] = [
         note: 'Powered by Google Gemini 2.0',
       },
       {
-        title: 'AI cycle predictor',
-        body: 'Predictions and insights drawn from your cycle history and the symptoms you have logged.',
+        title: 'Analyze your plate with AI',
+        body: 'Snap a photo of your meal and the AI identifies the foods and calculates protein, carbs, fat and calories instantly.',
       },
     ],
   },

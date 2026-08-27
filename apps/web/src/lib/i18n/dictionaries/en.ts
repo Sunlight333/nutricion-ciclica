@@ -421,7 +421,7 @@ export const en: Dictionary = {
     },
     membresia: {
       title: 'Membership and pricing — Nutricycle',
-      description: 'Nutricycle is free to start. The Hormonal Plan unlocks the AI coach without limits, the cycle predictor and unlimited saved recipes.',
+      description: 'Nutricycle is free to start. The Hormonal Plan unlocks the AI coach without limits, AI plate analysis and unlimited saved recipes.',
     },
     recetas: {
       title: 'Recipes by cycle phase',

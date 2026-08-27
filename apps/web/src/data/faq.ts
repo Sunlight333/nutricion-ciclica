@@ -32,7 +32,7 @@ const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     items: [
       {
         q: '¿Nutricycle es gratis?',
-        a: 'Nutricycle tiene un plan gratuito que incluye el seguimiento de tu ciclo menstrual, el registro diario de síntomas y energía, y acceso limitado a la Asesora con IA. El Plan Hormonal desbloquea las recetas por fase, el plan semanal de comidas, la lista de compras, la guía de alimentos clave, el predictor de ciclo con IA y la Asesora sin límite de mensajes.',
+        a: 'Nutricycle tiene un plan gratuito que incluye el seguimiento de tu ciclo menstrual, el registro diario de síntomas y energía, y acceso limitado a la Asesora con IA. El Plan Hormonal desbloquea las recetas por fase, el plan semanal de comidas, la lista de compras, la guía de alimentos clave, el análisis de plato con IA y la Asesora sin límite de mensajes.',
       },
       {
         q: '¿Qué es la nutrición cíclica?',
@@ -140,7 +140,7 @@ const FAQ_TEXT_EN: readonly FaqTextEn[] = [
     items: [
       {
         q: 'Is Nutricycle free?',
-        a: 'Nutricycle has a free plan that includes tracking your menstrual cycle, the daily log of symptoms and energy, and limited access to the AI Coach. The Hormonal Plan unlocks recipes by phase, the weekly meal plan, the shopping list, the key foods guide, the AI cycle predictor and unlimited messages with the Coach.',
+        a: 'Nutricycle has a free plan that includes tracking your menstrual cycle, the daily log of symptoms and energy, and limited access to the AI Coach. The Hormonal Plan unlocks recipes by phase, the weekly meal plan, the shopping list, the key foods guide, AI plate analysis and unlimited messages with the Coach.',
       },
       {
         q: 'What is cyclical nutrition?',
