@@ -11,9 +11,9 @@ export const en: Dictionary = {
   home: {
     hero: {
       badge: 'Cyclical nutrition with AI',
-      title: 'Eat with your cycle.',
-      accent: 'Feel like yourself again.',
-      lead: 'Nutricycle adapts your food, your recipes and your routines to each phase of your menstrual cycle.',
+      title: 'Alicia AI',
+      accent: 'already knows what day you are on.',
+      lead: 'Nutricycle syncs your food and your recipes with every phase of your menstrual cycle.',
       note: 'Free · iOS and Android · No card',
     },
     problem: {

@@ -70,6 +70,7 @@ const ES = {
     { feature: 'Asesora Nutricycle AI', free: 'Limitada', premium: 'Sin límite' },
     { feature: 'Predictor de ciclo con IA', free: '—', premium: 'Incluido' },
     { feature: 'Soporte prioritario', free: '—', premium: 'Incluido' },
+    { feature: 'Recetas guardadas', free: '—', premium: 'Incluido' },
   ] as ComparisonRow[],
 
   billing: [
@@ -125,6 +126,7 @@ const EN = {
     { feature: 'Nutricycle AI coach', free: 'Limited', premium: 'Unlimited' },
     { feature: 'AI cycle predictor', free: '—', premium: 'Included' },
     { feature: 'Priority support', free: '—', premium: 'Included' },
+    { feature: 'Saved recipes', free: '—', premium: 'Included' },
   ] as ComparisonRow[],
 
   billing: [

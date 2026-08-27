@@ -21,9 +21,9 @@ export const es = {
   home: {
     hero: {
       badge: 'Nutrición cíclica con IA',
-      title: 'Come con tu ciclo.',
-      accent: 'Vuelve a sentirte tú.',
-      lead: 'Nutricycle adapta tu alimentación, tus recetas y tus rutinas a cada fase de tu ciclo menstrual.',
+      title: 'Alicia AI',
+      accent: 'ya sabe en qué día estás.',
+      lead: 'Nutricycle sincroniza tu alimentación y tus recetas con cada fase de tu ciclo menstrual.',
       note: 'Gratis · iOS y Android · Sin tarjeta',
     },
     problem: {
@@ -222,7 +222,7 @@ export const es = {
       'Durante años mi cuerpo fue una espiral de acné, fatiga y desequilibrios que afectaban mi calidad de vida. Probé lo que prueba casi todo el mundo: dietas más estrictas, más disciplina, más culpa cuando no funcionaba.',
       'Lo que no había entendido es que mis hormonas tienen tres procesos esenciales — producir, metabolizar y eliminar — y que la alimentación puede acompañar o dificultar cada uno de ellos. No era falta de disciplina. Era falta de contexto.',
       'Después de seis años revirtiendo mis propios síntomas, consolidé una metodología basada en la alimentación como medicina — ajustada a cada fase del ciclo, sin restricciones y sin contar calorías.',
-      'Hoy mi misión es que otras mujeres no tarden seis años en descubrir lo mismo. Nutricycle es ese método, ordenado y automatizado, para que no tengas que llevar la cuenta vos.',
+      'Hoy mi misión es que otras mujeres no tarden seis años en descubrir lo mismo. Nutricycle es ese método, ordenado y automatizado, para que tú no tengas que llevar la cuenta.',
     ],
     credentialsEyebrow: 'Formación',
     credentialsTitle: 'De dónde viene',
