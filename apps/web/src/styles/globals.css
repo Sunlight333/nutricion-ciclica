@@ -99,13 +99,13 @@
   }
 
   .tilt {
-    transform: rotateY(-7deg) rotateX(2deg) translateZ(0);
+    transform: rotateY(-7deg) rotateX(2deg) rotate(var(--tilt-z, 0deg)) translateZ(0);
     transition: transform 700ms var(--ease-out-soft), box-shadow 700ms var(--ease-out-soft);
     transform-style: preserve-3d;
   }
 
   .scene:hover .tilt {
-    transform: rotateY(0deg) rotateX(0deg) translateZ(28px);
+    transform: rotateY(0deg) rotateX(0deg) rotate(0deg) translateZ(28px);
     box-shadow: var(--shadow-xl);
   }
 

@@ -26,6 +26,20 @@ const SCREENSHOTS: Record<string, string> = {
   lutea: '/images/app/today-lutea.jpg',
 };
 
+/** Same brand hues as tokens.css `--color-{phase}` — the ambient glow
+ *  behind each phone, not the pale `-soft` background used elsewhere. */
+const GLOW: Record<string, string> = {
+  menstrual: '#f2b8ba',
+  folicular: '#b8d8bc',
+  ovulatoria: '#f9dfa8',
+  lutea: '#cdc0e6',
+};
+
+/** A gentle fan instead of a rigid row — alternating resting tilt and
+ *  desynced float delay so the four phones don't move as one block. */
+const TILT_DEG = [-4, 3, -3, 4];
+const FLOAT_DELAY = ['0s', '-1.8s', '-3.4s', '-5.1s'];
+
 export function PhasesSection({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   return (
@@ -42,7 +56,7 @@ export function PhasesSection({ locale }: { locale: Locale }) {
         <ul className="mt-14 grid gap-9 sm:grid-cols-2 xl:grid-cols-4">
           {getPhases(locale).map((phase, i) => (
             <Reveal as="li" key={phase.slug} delay={i * 100} className="h-full">
-              <PhaseCard phase={phase} locale={locale} priority={i === 0} />
+              <PhaseCard phase={phase} locale={locale} priority={i === 0} index={i} />
             </Reveal>
           ))}
         </ul>
@@ -68,10 +82,12 @@ function PhaseCard({
   phase,
   locale,
   priority,
+  index,
 }: {
   phase: Phase;
   locale: Locale;
   priority?: boolean;
+  index: number;
 }) {
   const s = STYLES[phase.slug];
 
@@ -91,6 +107,9 @@ function PhaseCard({
           src={SCREENSHOTS[phase.slug]}
           alt={`${phase.name}: ${phase.tagline}`}
           priority={priority}
+          tiltDeg={TILT_DEG[index % TILT_DEG.length]}
+          glowColor={GLOW[phase.slug]}
+          floatDelay={FLOAT_DELAY[index % FLOAT_DELAY.length]}
         />
       </div>
     </div>

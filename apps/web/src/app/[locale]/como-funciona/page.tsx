@@ -37,6 +37,20 @@ const PHASE_SCREENSHOTS: Record<string, string> = {
   lutea: '/images/app/today-lutea.jpg',
 };
 
+/** Same brand hues as tokens.css `--color-{phase}` — the ambient glow
+ *  behind each phone, not the pale `-soft` background used elsewhere. */
+const PHASE_GLOW: Record<string, string> = {
+  menstrual: '#f2b8ba',
+  folicular: '#b8d8bc',
+  ovulatoria: '#f9dfa8',
+  lutea: '#cdc0e6',
+};
+
+/** A gentle fan instead of a rigid row — alternating resting tilt and
+ *  desynced float delay so the four phones don't move as one block. */
+const PHASE_TILT_DEG = [-4, 3, -3, 4];
+const PHASE_FLOAT_DELAY = ['0s', '-1.8s', '-3.4s', '-5.1s'];
+
 export async function generateMetadata({
   params,
 }: {
@@ -155,6 +169,9 @@ export default async function ComoFuncionaPage({
                       <PhoneMockup
                         src={PHASE_SCREENSHOTS[phase.slug]}
                         alt={`${phase.name}: ${phase.tagline}`}
+                        tiltDeg={PHASE_TILT_DEG[i % PHASE_TILT_DEG.length]}
+                        glowColor={PHASE_GLOW[phase.slug]}
+                        floatDelay={PHASE_FLOAT_DELAY[i % PHASE_FLOAT_DELAY.length]}
                       />
                     </div>
                   </div>
