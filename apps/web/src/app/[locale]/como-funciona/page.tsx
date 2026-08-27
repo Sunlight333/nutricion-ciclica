@@ -18,7 +18,24 @@ import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { Reveal } from '@/components/motion/reveal';
 import { CtaBand } from '@/components/marketing/cta-band';
+import { PhoneMockup } from '@/components/ui/phone-mockup';
 import { getJourney } from '@/data/journey';
+
+/** Matches the tint styling used on the homepage phases section. */
+const PHASE_STYLES: Record<string, { chip: string; ink: string }> = {
+  menstrual: { chip: 'bg-menstrual-soft text-menstrual-ink', ink: 'text-menstrual-ink' },
+  folicular: { chip: 'bg-follicular-soft text-follicular-ink', ink: 'text-follicular-ink' },
+  ovulatoria: { chip: 'bg-ovulation-soft text-ovulation-ink', ink: 'text-ovulation-ink' },
+  lutea: { chip: 'bg-luteal-soft text-luteal-ink', ink: 'text-luteal-ink' },
+};
+
+/** Real "Tu menú de hoy" screenshot per phase — client-supplied. */
+const PHASE_SCREENSHOTS: Record<string, string> = {
+  menstrual: '/images/app/today-menstrual.jpg',
+  folicular: '/images/app/today-folicular.jpg',
+  ovulatoria: '/images/app/today-ovulatoria.jpg',
+  lutea: '/images/app/today-lutea.jpg',
+};
 
 export async function generateMetadata({
   params,
@@ -119,21 +136,31 @@ export default async function ComoFuncionaPage({
             </p>
           </Reveal>
 
-          <ul className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-            {getPhases(locale).map((phase, i) => (
-              <Reveal as="li" key={phase.slug} delay={i * 90} className="h-full">
-                <article className="card card-hover flex h-full flex-col p-7">
-                  <span className="font-sans text-caption font-bold text-accent-display">
-                    {phaseDays(phase, locale)}
-                  </span>
-                  <h3 className="mt-3 text-h3 text-ink">{phase.name}</h3>
-                  <p className="mt-1 font-sans text-caption font-semibold text-muted">
-                    {phase.tagline}
-                  </p>
-                  <p className="mt-4 text-small text-muted">{phase.nutrition}</p>
-                </article>
-              </Reveal>
-            ))}
+          <ul className="mt-14 grid gap-9 sm:grid-cols-2 xl:grid-cols-4">
+            {getPhases(locale).map((phase, i) => {
+              const s = PHASE_STYLES[phase.slug];
+              return (
+                <Reveal as="li" key={phase.slug} delay={i * 90} className="h-full">
+                  <div className="flex h-full flex-col items-center text-center">
+                    <span
+                      className={`inline-flex w-fit rounded-full px-3.5 py-1.5 font-sans text-caption font-bold tracking-wide ${s.chip}`}
+                    >
+                      {phaseDays(phase, locale)}
+                    </span>
+                    <h3 className="mt-4 text-h3 text-ink">{phase.name}</h3>
+                    <p className={`mt-1 font-sans text-caption font-semibold ${s.ink}`}>
+                      {phase.tagline}
+                    </p>
+                    <div className="mt-6 w-full">
+                      <PhoneMockup
+                        src={PHASE_SCREENSHOTS[phase.slug]}
+                        alt={`${phase.name}: ${phase.tagline}`}
+                      />
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
           </ul>
 
           <Reveal className="mt-12 text-center" delay={420}>
