@@ -28,7 +28,7 @@ export const es = {
     },
     problem: {
       eyebrow: 'Por qué cuesta tanto',
-      title: 'No es falta de disciplina.',
+      title: 'No te falta disciplina.',
       accent: 'Es falta de contexto.',
     },
     steps: {

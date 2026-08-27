@@ -18,7 +18,7 @@ export const en: Dictionary = {
     },
     problem: {
       eyebrow: 'Why it is so hard',
-      title: 'It is not a lack of discipline.',
+      title: 'You are not lacking discipline.',
       accent: 'It is a lack of context.',
     },
     steps: {

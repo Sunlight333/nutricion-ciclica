@@ -1,4 +1,3 @@
-import { HelpCircle, Salad, BellRing } from 'lucide-react';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
@@ -6,7 +5,29 @@ import { Reveal } from '@/components/motion/reveal';
 import { getProblems } from '@/data/home';
 import { getDictionary, type Locale } from '@/lib/i18n';
 
-const ICONS = { HelpCircle, Salad, BellRing };
+/**
+ * Generic person avatar, standing in for a photo. Drawn in the same visual
+ * language as the lucide icons elsewhere (24x24, 1.9 stroke, currentColor)
+ * so it drops into the same icon-chip without a real photo, which would
+ * misattribute someone else's likeness to a quote they never said.
+ */
+function PersonAvatar({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.9}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+    </svg>
+  );
+}
 
 export function ProblemSection({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
@@ -23,12 +44,11 @@ export function ProblemSection({ locale }: { locale: Locale }) {
 
         <ul className="mt-14 grid gap-7 md:grid-cols-3">
           {getProblems(locale).map((problem, i) => {
-            const Icon = ICONS[problem.icon];
             return (
               <Reveal as="li" key={problem.pain} delay={i * 110}>
                 <article className="card card-hover h-full p-8 lg:p-9">
                   <span className={`icon-chip ${problem.tint}`}>
-                    <Icon strokeWidth={1.9} className="h-9 w-9" />
+                    <PersonAvatar className="h-9 w-9" />
                   </span>
 
                   <h3 className="mt-6 text-h4 text-ink">“{problem.pain}”</h3>
