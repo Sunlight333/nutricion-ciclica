@@ -1,31 +1,41 @@
-import {
-  Sparkles,
-  CalendarDays,
-  Activity,
-  UtensilsCrossed,
-  ShoppingBasket,
-  Flower2,
-  ArrowRight,
-} from 'lucide-react';
+import { Sparkles, Flower2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { getDictionary, localizePath, type Locale } from '@/lib/i18n';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { Reveal } from '@/components/motion/reveal';
+import { PhoneMockup } from '@/components/ui/phone-mockup';
 import { getFeatures } from '@/data/home';
 import { cn } from '@/lib/cn';
 
-const ICONS = {
-  Sparkles,
-  CalendarDays,
-  Activity,
-  UtensilsCrossed,
-  ShoppingBasket,
-  Flower2,
-};
+const ICONS = { Sparkles, Flower2 };
+
+/**
+ * getFeatures(locale) always returns FEATURE_BASE's fixed order:
+ * [ai, tracker, chart, meals, shopping, wellness]. `ai` and `wellness`
+ * (indices 0 and 5) stay as icon cards; the middle four become real app
+ * screenshots — client-supplied, one per feature.
+ */
+const PHONE_SCREENSHOTS = [
+  '/images/app/feature-tracker.jpg',
+  '/images/app/feature-chart.jpg',
+  '/images/app/feature-meals.jpg',
+  '/images/app/feature-shopping.jpg',
+];
+
+/** Same brand hues as tokens.css `--color-{phase}`, matching each card's
+ *  existing tint (menstrual/ovulation/follicular/luteal, in that order). */
+const PHONE_GLOW = ['#f2b8ba', '#f9dfa8', '#b8d8bc', '#cdc0e6'];
+const PHONE_TILT_DEG = [-4, 3, -3, 4];
+const PHONE_FLOAT_DELAY = ['0s', '-1.8s', '-3.4s', '-5.1s'];
 
 export function FeaturesSection({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
+  const features = getFeatures(locale);
+  const [ai, , , , , wellness] = features;
+  const phoneFeatures = features.slice(1, 5);
+
   return (
     <Section surface="base">
       <Container>
@@ -37,9 +47,9 @@ export function FeaturesSection({ locale }: { locale: Locale }) {
           </h2>
         </Reveal>
 
-        <ul className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {getFeatures(locale).map((feature, i) => {
-            const Icon = ICONS[feature.icon];
+        <ul className="mx-auto mt-14 grid max-w-3xl gap-7 sm:grid-cols-2">
+          {[ai, wellness].map((feature, i) => {
+            const Icon = ICONS[feature.icon as 'Sparkles' | 'Flower2'];
             return (
               <Reveal as="li" key={feature.title} delay={i * 90} className="h-full">
                 <article
@@ -66,6 +76,26 @@ export function FeaturesSection({ locale }: { locale: Locale }) {
               </Reveal>
             );
           })}
+        </ul>
+
+        <ul className="mt-9 grid gap-9 sm:grid-cols-2 xl:grid-cols-4">
+          {phoneFeatures.map((feature, i) => (
+            <Reveal as="li" key={feature.title} delay={(i + 2) * 90} className="h-full">
+              <div className="flex h-full flex-col items-center text-center">
+                <div className="w-full">
+                  <PhoneMockup
+                    src={PHONE_SCREENSHOTS[i]}
+                    alt={feature.title}
+                    tiltDeg={PHONE_TILT_DEG[i]}
+                    glowColor={PHONE_GLOW[i]}
+                    floatDelay={PHONE_FLOAT_DELAY[i]}
+                  />
+                </div>
+                <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
+                <p className="mt-2 text-small text-muted">{feature.body}</p>
+              </div>
+            </Reveal>
+          ))}
         </ul>
 
         <Reveal className="mt-12 text-center" delay={560}>
