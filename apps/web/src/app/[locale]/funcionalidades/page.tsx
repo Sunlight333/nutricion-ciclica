@@ -183,61 +183,45 @@ export default async function FuncionalidadesPage({
             </Reveal>
 
             {group.id === 'ciclo' ? (
-              <>
-                <ul className="mx-auto mt-14 grid max-w-md gap-7">
-                  <Reveal as="li" className="h-full">
-                    <FeatureCard feature={group.features[0]} premiumNote={t.content.premiumNote} />
-                  </Reveal>
-                </ul>
-
-                <ul className="mt-9 grid gap-9 sm:grid-cols-2 lg:grid-cols-3">
-                  {group.features.slice(1).map((feature, i) => (
-                    <Reveal as="li" key={feature.title} delay={(i + 1) * 90} className="h-full">
-                      <div className="flex h-full flex-col items-center text-center">
-                        <div className="w-full">
-                          <PhoneMockup
-                            src={CICLO_PHONE_SCREENSHOTS[i]}
-                            alt={feature.title}
-                            tiltDeg={CICLO_PHONE_TILT_DEG[i]}
-                            glowColor={CICLO_PHONE_GLOW[i]}
-                            floatDelay={CICLO_PHONE_FLOAT_DELAY[i]}
-                          />
-                        </div>
-                        <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
-                        <p className="mt-2 text-small text-muted">{feature.body}</p>
+              <ul className="mt-14 grid gap-9 sm:grid-cols-2 lg:grid-cols-3">
+                {group.features.slice(1).map((feature, i) => (
+                  <Reveal as="li" key={feature.title} delay={i * 90} className="h-full">
+                    <div className="flex h-full flex-col items-center text-center">
+                      <div className="w-full">
+                        <PhoneMockup
+                          src={CICLO_PHONE_SCREENSHOTS[i]}
+                          alt={feature.title}
+                          tiltDeg={CICLO_PHONE_TILT_DEG[i]}
+                          glowColor={CICLO_PHONE_GLOW[i]}
+                          floatDelay={CICLO_PHONE_FLOAT_DELAY[i]}
+                        />
                       </div>
-                    </Reveal>
-                  ))}
-                </ul>
-              </>
+                      <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
+                      <p className="mt-2 text-small text-muted">{feature.body}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </ul>
             ) : group.id === 'nutricion' ? (
-              <>
-                <ul className="mt-14 grid gap-9 sm:grid-cols-2 xl:grid-cols-4">
-                  {group.features.slice(0, 4).map((feature, i) => (
-                    <Reveal as="li" key={feature.title} delay={i * 90} className="h-full">
-                      <div className="flex h-full flex-col items-center text-center">
-                        <div className="w-full">
-                          <PhoneMockup
-                            src={NUTRICION_PHONE_SCREENSHOTS[i]}
-                            alt={feature.title}
-                            tiltDeg={NUTRICION_PHONE_TILT_DEG[i]}
-                            glowColor={NUTRICION_PHONE_GLOW[i]}
-                            floatDelay={NUTRICION_PHONE_FLOAT_DELAY[i]}
-                          />
-                        </div>
-                        <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
-                        <p className="mt-2 text-small text-muted">{feature.body}</p>
+              <ul className="mt-14 grid gap-9 sm:grid-cols-2 xl:grid-cols-4">
+                {group.features.slice(0, 4).map((feature, i) => (
+                  <Reveal as="li" key={feature.title} delay={i * 90} className="h-full">
+                    <div className="flex h-full flex-col items-center text-center">
+                      <div className="w-full">
+                        <PhoneMockup
+                          src={NUTRICION_PHONE_SCREENSHOTS[i]}
+                          alt={feature.title}
+                          tiltDeg={NUTRICION_PHONE_TILT_DEG[i]}
+                          glowColor={NUTRICION_PHONE_GLOW[i]}
+                          floatDelay={NUTRICION_PHONE_FLOAT_DELAY[i]}
+                        />
                       </div>
-                    </Reveal>
-                  ))}
-                </ul>
-
-                <ul className="mx-auto mt-9 grid max-w-md gap-7">
-                  <Reveal as="li" delay={360} className="h-full">
-                    <FeatureCard feature={group.features[4]} premiumNote={t.content.premiumNote} />
+                      <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
+                      <p className="mt-2 text-small text-muted">{feature.body}</p>
+                    </div>
                   </Reveal>
-                </ul>
-              </>
+                ))}
+              </ul>
             ) : group.id === 'registro' ? (
               <ul className="mt-14 grid gap-9 sm:grid-cols-2 lg:grid-cols-3">
                 {group.features.map((feature, i) => (
