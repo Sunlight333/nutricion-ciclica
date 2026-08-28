@@ -29,24 +29,8 @@ import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { Reveal } from '@/components/motion/reveal';
 import { CtaBand } from '@/components/marketing/cta-band';
-import { PhoneMockup } from '@/components/ui/phone-mockup';
 import { getFeatureGroups, type Feature } from '@/data/features';
 import { cn } from '@/lib/cn';
-
-/**
- * "Inteligencia del ciclo" group only: features[1..3] (Calendario del
- * ciclo, Calculadora de período, Gráfico hormonal) become real app
- * screenshots, index-matched since group.features keeps the same order in
- * both locales. features[0] (Configuración en 2 minutos) stays an icon card.
- */
-const CICLO_PHONE_SCREENSHOTS = [
-  '/images/app/feature-tracker.jpg',
-  '/images/app/ciclo-calculadora.jpg',
-  '/images/app/feature-chart.jpg',
-];
-const CICLO_PHONE_GLOW = ['#f2b8ba', '#f9dfa8', '#b8d8bc'];
-const CICLO_PHONE_TILT_DEG = [-4, 3, -3];
-const CICLO_PHONE_FLOAT_DELAY = ['0s', '-2.3s', '-4.6s'];
 
 export async function generateMetadata({
   params,
@@ -153,53 +137,23 @@ export default async function FuncionalidadesPage({
               )}
             </Reveal>
 
-            {group.id === 'ciclo' ? (
-              <>
-                <ul className="mx-auto mt-14 grid max-w-md gap-7">
-                  <Reveal as="li" className="h-full">
-                    <FeatureCard feature={group.features[0]} premiumNote={t.content.premiumNote} />
-                  </Reveal>
-                </ul>
-
-                <ul className="mt-9 grid gap-9 sm:grid-cols-2 lg:grid-cols-3">
-                  {group.features.slice(1).map((feature, i) => (
-                    <Reveal as="li" key={feature.title} delay={(i + 1) * 90} className="h-full">
-                      <div className="flex h-full flex-col items-center text-center">
-                        <div className="w-full">
-                          <PhoneMockup
-                            src={CICLO_PHONE_SCREENSHOTS[i]}
-                            alt={feature.title}
-                            tiltDeg={CICLO_PHONE_TILT_DEG[i]}
-                            glowColor={CICLO_PHONE_GLOW[i]}
-                            floatDelay={CICLO_PHONE_FLOAT_DELAY[i]}
-                          />
-                        </div>
-                        <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
-                        <p className="mt-2 text-small text-muted">{feature.body}</p>
-                      </div>
-                    </Reveal>
-                  ))}
-                </ul>
-              </>
-            ) : (
-              <ul
-                className={cn(
-                  'mt-14 grid gap-7 sm:grid-cols-2',
-                  group.columns === 3 && 'lg:grid-cols-3',
-                )}
-              >
-                {group.features.map((feature, i) => (
-                  <Reveal
-                    as="li"
-                    key={feature.title}
-                    delay={i * 90}
-                    className="h-full"
-                  >
-                    <FeatureCard feature={feature} premiumNote={t.content.premiumNote} />
-                  </Reveal>
-                ))}
-              </ul>
-            )}
+            <ul
+              className={cn(
+                'mt-14 grid gap-7 sm:grid-cols-2',
+                group.columns === 3 && 'lg:grid-cols-3',
+              )}
+            >
+              {group.features.map((feature, i) => (
+                <Reveal
+                  as="li"
+                  key={feature.title}
+                  delay={i * 90}
+                  className="h-full"
+                >
+                  <FeatureCard feature={feature} premiumNote={t.content.premiumNote} />
+                </Reveal>
+              ))}
+            </ul>
           </Container>
         </Section>
       ))}
