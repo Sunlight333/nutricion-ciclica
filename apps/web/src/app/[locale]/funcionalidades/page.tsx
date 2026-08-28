@@ -63,6 +63,20 @@ const NUTRICION_PHONE_GLOW = ['#f2b8ba', '#b8d8bc', '#f9dfa8', '#cdc0e6'];
 const NUTRICION_PHONE_TILT_DEG = [-4, 3, -3, 4];
 const NUTRICION_PHONE_FLOAT_DELAY = ['0s', '-1.8s', '-3.4s', '-5.1s'];
 
+/**
+ * "Registro diario" group: all three features (Notas personales, Síntomas
+ * del ciclo, Nivel de energía) become real app screenshots — no icon card
+ * remains in this group.
+ */
+const REGISTRO_PHONE_SCREENSHOTS = [
+  '/images/app/registro-notas.jpg',
+  '/images/app/registro-sintomas.jpg',
+  '/images/app/registro-energia.jpg',
+];
+const REGISTRO_PHONE_GLOW = ['#f2b8ba', '#b8d8bc', '#cdc0e6'];
+const REGISTRO_PHONE_TILT_DEG = [-4, 3, -3];
+const REGISTRO_PHONE_FLOAT_DELAY = ['0s', '-2.3s', '-4.6s'];
+
 export async function generateMetadata({
   params,
 }: {
@@ -224,6 +238,26 @@ export default async function FuncionalidadesPage({
                   </Reveal>
                 </ul>
               </>
+            ) : group.id === 'registro' ? (
+              <ul className="mt-14 grid gap-9 sm:grid-cols-2 lg:grid-cols-3">
+                {group.features.map((feature, i) => (
+                  <Reveal as="li" key={feature.title} delay={i * 90} className="h-full">
+                    <div className="flex h-full flex-col items-center text-center">
+                      <div className="w-full">
+                        <PhoneMockup
+                          src={REGISTRO_PHONE_SCREENSHOTS[i]}
+                          alt={feature.title}
+                          tiltDeg={REGISTRO_PHONE_TILT_DEG[i]}
+                          glowColor={REGISTRO_PHONE_GLOW[i]}
+                          floatDelay={REGISTRO_PHONE_FLOAT_DELAY[i]}
+                        />
+                      </div>
+                      <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
+                      <p className="mt-2 text-small text-muted">{feature.body}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </ul>
             ) : (
               <ul
                 className={cn(
