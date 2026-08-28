@@ -48,6 +48,21 @@ const CICLO_PHONE_GLOW = ['#f2b8ba', '#f9dfa8', '#b8d8bc'];
 const CICLO_PHONE_TILT_DEG = [-4, 3, -3];
 const CICLO_PHONE_FLOAT_DELAY = ['0s', '-2.3s', '-4.6s'];
 
+/**
+ * "Nutrición y recetas" group only: features[0..3] (Recetas por fase, Plan
+ * semanal de comidas, Guía de alimentos clave, Lista de compras) become
+ * real app screenshots; features[4] (Recetas guardadas) stays an icon card.
+ */
+const NUTRICION_PHONE_SCREENSHOTS = [
+  '/images/app/recipes-menstrual.jpg',
+  '/images/app/nutricion-plan.jpg',
+  '/images/app/nutricion-guia.jpg',
+  '/images/app/feature-shopping.jpg',
+];
+const NUTRICION_PHONE_GLOW = ['#f2b8ba', '#b8d8bc', '#f9dfa8', '#cdc0e6'];
+const NUTRICION_PHONE_TILT_DEG = [-4, 3, -3, 4];
+const NUTRICION_PHONE_FLOAT_DELAY = ['0s', '-1.8s', '-3.4s', '-5.1s'];
+
 export async function generateMetadata({
   params,
 }: {
@@ -179,6 +194,34 @@ export default async function FuncionalidadesPage({
                       </div>
                     </Reveal>
                   ))}
+                </ul>
+              </>
+            ) : group.id === 'nutricion' ? (
+              <>
+                <ul className="mt-14 grid gap-9 sm:grid-cols-2 xl:grid-cols-4">
+                  {group.features.slice(0, 4).map((feature, i) => (
+                    <Reveal as="li" key={feature.title} delay={i * 90} className="h-full">
+                      <div className="flex h-full flex-col items-center text-center">
+                        <div className="w-full">
+                          <PhoneMockup
+                            src={NUTRICION_PHONE_SCREENSHOTS[i]}
+                            alt={feature.title}
+                            tiltDeg={NUTRICION_PHONE_TILT_DEG[i]}
+                            glowColor={NUTRICION_PHONE_GLOW[i]}
+                            floatDelay={NUTRICION_PHONE_FLOAT_DELAY[i]}
+                          />
+                        </div>
+                        <h3 className="mt-6 text-h4 text-ink">{feature.title}</h3>
+                        <p className="mt-2 text-small text-muted">{feature.body}</p>
+                      </div>
+                    </Reveal>
+                  ))}
+                </ul>
+
+                <ul className="mx-auto mt-9 grid max-w-md gap-7">
+                  <Reveal as="li" delay={360} className="h-full">
+                    <FeatureCard feature={group.features[4]} premiumNote={t.content.premiumNote} />
+                  </Reveal>
                 </ul>
               </>
             ) : (
