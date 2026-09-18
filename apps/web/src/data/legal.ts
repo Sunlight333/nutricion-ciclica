@@ -233,7 +233,6 @@ export const PRIVACIDAD: LegalDoc = {
           items: [
             'Actividad en la App y uso de funciones',
             'Tipo de dispositivo, sistema operativo y versión de la App',
-            'Datos de analítica recopilados a través de Firebase y/o Google Analytics',
           ],
         },
         {
@@ -266,6 +265,19 @@ export const PRIVACIDAD: LegalDoc = {
         {
           type: 'p',
           text: 'Nutricycle recopila información de salud sensible, incluyendo datos del ciclo menstrual y síntomas. Esta información se utiliza exclusivamente para brindarte recomendaciones nutricionales personalizadas dentro de la App. No vendemos, compartimos ni utilizamos tus datos de salud con fines publicitarios.',
+        },
+      ],
+    },
+    {
+      heading: 'Chat de IA y Análisis de Fotos',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Las funciones de Chat de IA y "Analizar Plato" envían tus mensajes y cualquier foto de comida que subís, junto con el contexto de tu ciclo relevante, a la API Gemini de Google para generar una respuesta.',
+        },
+        {
+          type: 'p',
+          text: 'Este procesamiento está sujeto a la Política de Privacidad de Google, disponible en policies.google.com/privacy.',
         },
       ],
     },
@@ -338,13 +350,16 @@ export const PRIVACIDAD: LegalDoc = {
       blocks: [
         {
           type: 'p',
-          text: 'La App puede utilizar los siguientes servicios de terceros que tienen sus propias Políticas de Privacidad:',
+          text: 'La App utiliza los siguientes servicios de terceros para funcionar. Cada uno tiene su propia Política de Privacidad:',
         },
         {
           type: 'ul',
           items: [
-            'Google Analytics / Firebase — policies.google.com/privacy',
-            'Google Play — policies.google.com/privacy',
+            'Clerk — autenticación / gestión de cuenta. Comparte: email, nombre y credenciales de acceso.',
+            'Supabase — base de datos y almacenamiento de archivos. Comparte: datos de ciclo, registros diarios, registros de ayuno, recetas guardadas, fotos de comidas e información de perfil.',
+            'RevenueCat — gestión de suscripciones. Comparte: estado de compra/suscripción.',
+            'Apple App Store / Google Play — procesamiento de pagos. Comparte: datos de pago (nunca llega a nuestros servidores).',
+            'API Gemini de Google — chat de IA, predicciones de ciclo y análisis de fotos de comidas. Comparte: los mensajes y fotos que enviás a las funciones de IA, además del contexto de ciclo relevante. Política de privacidad de Google: policies.google.com/privacy',
           ],
         },
       ],
